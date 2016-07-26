@@ -1,0 +1,10 @@
+Captures/left01.ppm
+Captures/right01.ppm
+Captures/left02.ppm
+Captures/right02.ppm
+Captures/left03.ppm
+Captures/right03.ppm
+Captures/left04.ppm
+Captures/right04.ppm
+Captures/left05.ppm
+Captures/right05.ppm

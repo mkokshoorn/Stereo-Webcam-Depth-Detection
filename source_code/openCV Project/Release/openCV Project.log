@@ -1,0 +1,21 @@
+﻿Build started 5/12/2013 11:16:17 PM.
+     1>Project "J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\openCV Project\openCV Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\OpenCV2.4.3\opencv\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\CVStereoDepth.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CVStereoDepth.cpp
+         CVStereoDepth.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\Release\CVStereoDepth.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\OpenCV2.4.3\opencv\lib" opencv_core243.lib opencv_highgui243.lib opencv_imgproc243.lib opencv_calib3d243.lib opencv_legacy243.lib opencv_features2d243.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\Release\CVStereoDepth.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\Release\CVStereoDepth.lib" /MACHINE:X86 /SAFESEH Release\CVStereoCorrespondance.obj
+         Release\CVStereoDepth.obj
+         Release\globaldata.obj
+         Release\CVStereoCalibration.obj
+         Release\CVStereoWebcam.obj
+         Release\stdafx.obj
+         Release\stereo_calibrate.obj
+         Generating code
+         Finished generating code
+         openCV Project.vcxproj -> J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\Release\CVStereoDepth.exe
+     1>Done Building Project "J:\Universtity Projects and Documents\Computer Vision 2013\Code\openCV Project\openCV Project\openCV Project.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.31
