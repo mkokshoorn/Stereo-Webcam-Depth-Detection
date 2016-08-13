@@ -12,7 +12,7 @@ Visual Studio 2012 was used for this project. The project files are avaliable wi
 
 The hardware requirement for the code is simply two USB webcams plugged into the PC as can be seen below. As is it important that the webcams stay in a fixed postion after calibration (more about calibration below) a clamp was fabricated during this project.
 
-![](https://github.com/mkokshoorn/Stereo_Webcam_Depth_Detection/blob/master/Device_image.jpg)
+<img src="https://github.com/mkokshoorn/Stereo_Webcam_Depth_Detection/blob/master/Device_image.jpg" width="400">
 
 ## Building the Code
 The code was developed using visual studio 2012 and openCV 2.4.3. Install both of these, set the appropriate environment variables and open the '.sln' file in the source_code folder to open the project. Build the code in release mode to get CVStereoDepth.exe.
@@ -25,7 +25,7 @@ To run the main program, the stereo vision pair of webcams need to be calibrated
 
 The calibration code requires images of chessboard seen by both cameras to calculate intrinsic and extrinsic camera parameters.  The dimensions of chessboard need to be #defined in stdafx.h as NX and NY, however the values currently correspond to an A4 printed version of the chessboard at http://1.bp.blogspot.com/_0zx-4pM8HnA/TSltkqjXscI/AAAAAAAAAI0/45MJoCS5-f8/s1600/OpenCV_Chessboard.png and as follows:
 
-![](http://1.bp.blogspot.com/_0zx-4pM8HnA/TSltkqjXscI/AAAAAAAAAI0/45MJoCS5-f8/s1600/OpenCV_Chessboard.png)
+<img src="http://1.bp.blogspot.com/_0zx-4pM8HnA/TSltkqjXscI/AAAAAAAAAI0/45MJoCS5-f8/s1600/OpenCV_Chessboard.png" width="400">
 
 When the calibration is running, each frame can then be captured manual by pressing spacebar or initiate the auto capture sequence by pressing C. This will take a shot every 0.5 seconds (#defined in stdafx.h as SECONDS_BETWEEN_CAPTURES). Once this is complete or at any time, presses ESC to finish capturing and begin calibration. 
 
