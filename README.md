@@ -8,9 +8,9 @@ A memory based algorithm in also developed to improve the stability of the depth
 
 ## Requirements
 
-Visual Studio 2012 was used for this project. The project files are avaliable with the source code.
+Visual Studio 2012 was used for this project. The project files are available with the source code.
 
-The hardware requirement for the code is simply two USB webcams plugged into the PC as can be seen below. As is it important that the webcams stay in a fixed postion after calibration (more about calibration below) a clamp was fabricated during this project.
+The hardware requirement for the code is simply two USB webcams plugged into the PC as can be seen below. As is it important that the webcams stay in a fixed position after calibration (more about calibration below) a clamp was fabricated during this project.
 
 <img src="https://github.com/mkokshoorn/Stereo_Webcam_Depth_Detection/blob/master/Device_image.jpg" width="400">
 
@@ -42,7 +42,7 @@ Once the calibration procedure has been run and the code is run from the command
 -	BM STEREO CORRESPONDANCE PARAMETERS allows the user to modify the parameters associated with the block matching algorithm.
 -	RED OBJECT FINDER – Shows the red threshold image, for object tracking.
 
-The main fucntion is found within CVStereoDepth.cpp and carries out the following tasks:
+The main function is found within CVStereoDepth.cpp and carries out the following tasks:
 -	Calibration, if specified.
 -	Enters a loop until ESC is pressed.
 -	Rectifies left and right image.
@@ -62,16 +62,16 @@ An example video of the program running can be seen in DemoWithText.mp4. A scree
 ## Source Code Overview
 
 The Stereo Vision project source code consists of 6 modules. They are briefly explained as follows:
--	CVStereoDepth.cpp – This consists of the main fucntion and scheduling of tasks previously outlined.
+-	CVStereoDepth.cpp – This consists of the main function and scheduling of tasks previously outlined.
 -	Stereo_calibrate.cpp – This is an open source piece of code provided by Martin Perris. See Academic paper for details. It essentially carries out the calibration form a list of image file locations and the size of the chessboard.
 -	CVStereoCalibration.cpp – This is a higher level module for the calibration process to allow the auto capturing sequence.
 -	Globaldata.cpp – This module contains a name space in order for global data to be shared.
 -	CVStereoWebcam.cpp – Deals with the capturing and acquiring of web cam images and also the display functions.
--	CVStereoCorrespondance.cpp – This function deals with the block matching correspondence process and the calculations of depth associated with it. Additionally it sets up the block matching parameters windows parameters and slider interface.
+-	CVStereoCorrespondance.cpp – This function deals with the block matching correspondence process and the calculations of depth associated with it. Additionally, it sets up the block matching parameters windows parameters and slider interface.
 
 ## Known Issues
 There appears to be a memory leak associated with the Blob Library causing the program to crash. This can be removed by changing BLOB_TRACKING (#defined in stdafx.h) from 1 to 0. The issue causes to program to crash after a long duration of time due to memory exhaustion.
 
-It is important to note that the slider values for the block matching parameters do not exactly match those passed to the correspondence fucntion. This is due to the sliders inability to go below zero. Therefore in the case of several of the values they are shifted and scaled. i.e. A  0  to 100 slider may represent -100 to 100. 
+It is important to note that the slider values for the block matching parameters do not exactly match those passed to the correspondence fucntion. This is due to the sliders inability to go below zero. Therefore, in the case of several of the values they are shifted and scaled. i.e. A  0  to 100 slider may represent -100 to 100. 
 
 
