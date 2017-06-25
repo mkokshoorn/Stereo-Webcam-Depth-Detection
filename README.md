@@ -10,7 +10,7 @@ A memory based algorithm in also developed to improve the stability of the depth
 
 Visual Studio 2012 was used for this project. The project files are available with the source code.
 
-The hardware requirement for the code is simply two USB webcams plugged into the PC as can be seen below. As is it important that the webcams stay in a fixed position after calibration (more about calibration below) a clamp was fabricated during this project.
+The hardware requirement for the code is simply two USB webcams plugged into the PC as can be seen below. As it is important that the webcams stay in a fixed position after calibration (more about calibration below) a clamp was fabricated during this project.
 
 <img src="https://github.com/mkokshoorn/Stereo_Webcam_Depth_Detection/blob/master/Device_image.jpg" width="400">
 
